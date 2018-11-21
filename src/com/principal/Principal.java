@@ -19,10 +19,10 @@ public class Principal {
     private static void menu() {
         boolean bandera = true;
         ServiciosCompu servicios = new ServiciosCompu();
-        System.out.println("----------- Bienvenido a TecnologÃ­a "
+        System.out.println("----------- Bienvenido a Tecnología "
                 + "Integradora----------------");
         do{
-            System.out.println("Ingresa la opciÃ³n deseada"
+            System.out.println("Ingresa la opción deseada"
                     + "\n   1) Anadir computadora"
                     + "\n   2) Revisar la lista"
                     + "\n   3) Modificar en la lista"
@@ -34,7 +34,7 @@ public class Principal {
                     Computadora compu = pedirDatosAUsuario();
                     boolean exito = servicios.agregar(compu);
                     if(exito)
-                        System.out.println("Se agregÃ³ con Ã©xito");
+                        System.out.println("Se agregada con exito");
                     else
                         System.out.println("NEL MORRO NO SE HACE");
                     break;
@@ -44,6 +44,7 @@ public class Principal {
                     
                     break;
                 case 3:
+                    
                     break;
                 case 4:
                     break;
@@ -74,6 +75,7 @@ public class Principal {
         for(Computadora compu : listaDeCompus){
             System.out.println(compu);
         }
+        System.out.println("actualizacion");
     }
     
 }
